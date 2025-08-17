@@ -21,7 +21,7 @@ a{
     color: inherit;
 }
 
-/** Page: TimeLine  **/
+/** Page: SideBar  **/
 
 .layout{
     margin: 0 auto;
@@ -79,6 +79,8 @@ li {
 .sidebar .newTweet:hover{
     filter: brightness(0.85);
 }
+/** Page: TimeLine  **/
+
 .content{
     border-left: 1px solid #ebeef0;
     border-right: 1px solid #ebeef0;
