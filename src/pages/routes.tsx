@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Timeline } from "./pages/timeline";
-import { Status } from "./pages/status";
+import { Timeline } from "./timeline";
+import { Status } from "./status";
 
 export const router = createBrowserRouter([
     {
