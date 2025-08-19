@@ -12,7 +12,6 @@ export function Timeline(){
           <div className="title">Home
             <Sparkle/>  
           </div>  
-          
           <form className='new-tweet'>
             <label htmlFor="tweet">
               <img src="https://github.com/Lais-coder.png" alt="Foto Usúario" />
@@ -21,7 +20,6 @@ export function Timeline(){
             <button type='submit'>Tweet</button>
           </form>
           <div className="separador"></div>
-          
           {tweets.map(tweet =>{
             return <Tweet key={tweet} content={tweet}/>
           } 
