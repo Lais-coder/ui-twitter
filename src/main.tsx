@@ -5,7 +5,6 @@ import {Sidebar} from './componentes/Sidebar'
 import { Sparkle} from 'phosphor-react'
 import { Tweet } from './componentes/Tweet'
 
-
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <div className='layout'>
