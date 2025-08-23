@@ -3,8 +3,8 @@ import { Tweet } from "../componentes/Tweet"
 import './timeline.css'
 import { useState, type FormEvent } from "react"
 
-let newTweet = ''
 export function Timeline(){
+  const [newTweet, setNewTweet] = useState('')
   const [tweets , setTweets] = useState ([
     'Meu primeiro tweet',
     'Teste',
@@ -13,6 +13,7 @@ export function Timeline(){
     function createNewTweet(event: FormEvent){
       event.preventDefault()
       setTweets([newTweet  ,...tweets ])
+      setNewTweet('')
     }
     return(
          <main className="timeline">
@@ -25,8 +26,9 @@ export function Timeline(){
               <textarea 
               id='tweet' 
               placeholder="What's happigin?" 
+              value={newTweet}
               onChange={(event) => {
-                newTweet = event.target.value
+                setNewTweet (event.target.value) 
               }} 
               />
             </label>
