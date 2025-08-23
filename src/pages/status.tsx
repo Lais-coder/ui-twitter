@@ -1,7 +1,7 @@
 import { Sparkle } from "phosphor-react"
 import { Tweet } from "../componentes/Tweet"
 import './status.css'
-import  { useState, type FormEvent } from "react"
+import  { useState, type FormEvent, type KeyboardEvent } from "react"
 
 export function Status(){
     const [newAnswers, setNewAnswers] = useState('')
